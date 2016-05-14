@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+	flatDir {
+        dirs 'lib'
+    }
+    jcenter()
+}
+
+dependencies {
+    compile 'betfair:aping:0.1-SNAPSHOT'
+}
