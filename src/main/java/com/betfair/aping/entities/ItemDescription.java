@@ -2,6 +2,8 @@ package com.betfair.aping.entities;
 
 import java.util.Date;
 
+/** This object contains some text which may be useful to render a betting history view.
+ * It offers no long-term warranty as to the correctness of the text. */
 public class ItemDescription {
 	private String eventTypeDesc;
 	private String eventDesc;
