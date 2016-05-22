@@ -8,5 +8,4 @@ repositories {
 }
 
 dependencies {
-    compile 'betfair:aping:0.1-SNAPSHOT'
 }
