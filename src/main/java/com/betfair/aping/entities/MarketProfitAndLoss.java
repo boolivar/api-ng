@@ -5,7 +5,7 @@ import java.util.List;
 /** Profit and loss in a market */
 public class MarketProfitAndLoss {
 	private String marketId;
-	private double commissionApplied;
+	private Double commissionApplied;
 	private List<RunnerProfitAndLoss> profitAndLosses;
 	
 	public String getMarketId() {
@@ -18,11 +18,11 @@ public class MarketProfitAndLoss {
 	
 	/** The commission rate applied to P&L values.
 	 * Only returned if netOfCommision option is requested */
-	public double getCommissionApplied() {
+	public Double getCommissionApplied() {
 		return commissionApplied;
 	}
 	
-	public void setCommissionApplied(double commissionApplied) {
+	public void setCommissionApplied(Double commissionApplied) {
 		this.commissionApplied = commissionApplied;
 	}
 	

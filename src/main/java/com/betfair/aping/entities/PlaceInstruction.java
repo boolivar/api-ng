@@ -6,7 +6,7 @@ import com.betfair.aping.enums.Side;
 public class PlaceInstruction {
 	private OrderType orderType;
 	private long selectionId;
-	private double handicap;
+	private Double handicap;
 	private Side side;
 	private LimitOrder limitOrder;
 	private LimitOnCloseOrder limitOnCloseOrder;
@@ -28,13 +28,13 @@ public class PlaceInstruction {
 		this.selectionId = selectionId;
 	}
 
-	public double getHandicap() {
+	public Double getHandicap() {
 		return handicap;
 	}
 
 	/** The handicap associated with the runner in case of Asian handicap markets,
 	 * null otherwise. */
-	public void setHandicap(double handicap) {
+	public void setHandicap(Double handicap) {
 		this.handicap = handicap;
 	}
 

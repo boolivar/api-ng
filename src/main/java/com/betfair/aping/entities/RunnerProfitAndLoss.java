@@ -3,9 +3,9 @@ package com.betfair.aping.entities;
 /** Profit and loss if selection is wins or loses */
 public class RunnerProfitAndLoss {
 	private long selectionId;
-	private double ifWin;
-	private double ifLose;
-	private double ifPlace;
+	private Double ifWin;
+	private Double ifLose;
+	private Double ifPlace;
 
 	public long getSelectionId() {
 		return selectionId;
@@ -16,31 +16,31 @@ public class RunnerProfitAndLoss {
 	}
 
 	/** Profit or loss for the market if this selection is the winner. */
-	public double getIfWin() {
+	public Double getIfWin() {
 		return ifWin;
 	}
 
-	public void setIfWin(double ifWin) {
+	public void setIfWin(Double ifWin) {
 		this.ifWin = ifWin;
 	}
 
 	/** Profit or loss for the market if this selection is the loser.
 	 * Only returned for multi-winner odds markets. */
-	public double getIfLose() {
+	public Double getIfLose() {
 		return ifLose;
 	}
 
-	public void setIfLose(double ifLose) {
+	public void setIfLose(Double ifLose) {
 		this.ifLose = ifLose;
 	}
 
 	/** Profit or loss for the market if this selection is placed.
 	 * Applies to marketType EACH_WAY only. */
-	public double getIfPlace() {
+	public Double getIfPlace() {
 		return ifPlace;
 	}
 
-	public void setIfPlace(double ifPlace) {
+	public void setIfPlace(Double ifPlace) {
 		this.ifPlace = ifPlace;
 	}
 }

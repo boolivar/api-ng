@@ -11,8 +11,8 @@ public class ItemDescription {
 	private String marketType;
 	private Date marketStartTime;
 	private String runnerDesc;
-	private int numberOfWinners;
-	private double eachWayDivisor;
+	private Integer numberOfWinners;
+	private Double eachWayDivisor;
 	
 	/** The event type name, translated into the requested locale. Available at EVENT_TYPE groupBy or lower. */
 	public String getEventTypeDesc() {
@@ -69,21 +69,21 @@ public class ItemDescription {
 	}
 	
 	/** The number of winners on a market. Available at BET groupBy. */
-	public int getNumberOfWinners() {
+	public Integer getNumberOfWinners() {
 		return numberOfWinners;
 	}
 	
-	public void setNumberOfWinners(int numberOfWinners) {
+	public void setNumberOfWinners(Integer numberOfWinners) {
 		this.numberOfWinners = numberOfWinners;
 	}
 	
 	/** The divisor is returned for the marketType EACH_WAY only and refers to the fraction of the win odds at which the place portion of an
 	 * <a href="http://docs.developer.betfair.com/docs/display/1smk3cen4v3lu3yomq5qye0ni/placeOrders#placeOrders-EachWayBetting">each way bet</a> is settled */
-	public double getEachWayDivisor() {
+	public Double getEachWayDivisor() {
 		return eachWayDivisor;
 	}
 	
-	public void setEachWayDivisor(double eachWayDivisor) {
+	public void setEachWayDivisor(Double eachWayDivisor) {
 		this.eachWayDivisor = eachWayDivisor;
 	}
 }

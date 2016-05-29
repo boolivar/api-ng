@@ -8,8 +8,8 @@ import java.util.Set;
 public class PriceProjection {
 	private Set<PriceData> priceData;
 	private ExBestOffersOverrides exBestOfferOverRides;
-	private boolean virtualise;
-	private boolean rolloverStakes;
+	private Boolean virtualise;
+	private Boolean rolloverStakes;
 
 	public Set<PriceData> getPriceData() {
 		return priceData;
@@ -30,17 +30,17 @@ public class PriceProjection {
 		this.exBestOfferOverRides = exBestOfferOverRides;
 	}
 
-	public boolean isVirtualise() {
+	public Boolean isVirtualise() {
 		return virtualise;
 	}
 
 	/** Indicates if the returned prices should include virtual prices.
 	 * Applicable to EX_BEST_OFFERS and EX_ALL_OFFERS priceData selections, default value is false. */
-	public void setVirtualise(boolean virtualise) {
+	public void setVirtualise(Boolean virtualise) {
 		this.virtualise = virtualise;
 	}
 
-	public boolean isRolloverStakes() {
+	public Boolean isRolloverStakes() {
 		return rolloverStakes;
 	}
 
@@ -49,7 +49,7 @@ public class PriceProjection {
 	 * If unspecified defaults to false.
 	 * Applicable to EX_BEST_OFFERS and EX_ALL_OFFERS price projections.
 	 * Not supported as yet. */
-	public void setRolloverStakes(boolean rolloverStakes) {
+	public void setRolloverStakes(Boolean rolloverStakes) {
 		this.rolloverStakes = rolloverStakes;
 	}
 

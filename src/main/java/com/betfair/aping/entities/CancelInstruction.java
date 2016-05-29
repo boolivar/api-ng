@@ -3,7 +3,7 @@ package com.betfair.aping.entities;
 /** Instruction to fully or partially cancel an order (only applies to LIMIT orders) */
 public class CancelInstruction {
 	private String betId;
-	private double sizeReduction;
+	private Double sizeReduction;
 	
 	public String getBetId() {
 		return betId;
@@ -13,13 +13,12 @@ public class CancelInstruction {
 		this.betId = betId;
 	}
 	
-	/** If supplied then this is a partial cancel. Should be set to 'null' if no size reduction is required. */
-	public double getSizeReduction() {
+	public Double getSizeReduction() {
 		return sizeReduction;
 	}
 
 	/** If supplied then this is a partial cancel. Should be set to 'null' if no size reduction is required. */
-	public void setSizeReduction(double sizeReduction) {
+	public void setSizeReduction(Double sizeReduction) {
 		this.sizeReduction = sizeReduction;
 	}
 }
