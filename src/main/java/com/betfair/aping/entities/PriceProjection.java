@@ -7,7 +7,7 @@ import java.util.Set;
 /** Selection criteria of the returning price data */
 public class PriceProjection {
 	private Set<PriceData> priceData;
-	private ExBestOfferOverRides exBestOfferOverRides;
+	private ExBestOffersOverrides exBestOfferOverRides;
 	private boolean virtualise;
 	private boolean rolloverStakes;
 
@@ -20,13 +20,13 @@ public class PriceProjection {
 		this.priceData = priceData;
 	}
 
-	public ExBestOfferOverRides getExBestOfferOverRides() {
+	public ExBestOffersOverrides getExBestOfferOverRides() {
 		return exBestOfferOverRides;
 	}
 
 	/** Options to alter the default representation of best offer prices
 	 * Applicable to EX_BEST_OFFERS priceData selection */
-	public void setExBestOfferOverRides(ExBestOfferOverRides exBestOfferOverRides) {
+	public void setExBestOfferOverRides(ExBestOffersOverrides exBestOfferOverRides) {
 		this.exBestOfferOverRides = exBestOfferOverRides;
 	}
 

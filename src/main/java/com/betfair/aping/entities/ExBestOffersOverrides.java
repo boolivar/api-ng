@@ -3,20 +3,20 @@ package com.betfair.aping.entities;
 import com.betfair.aping.enums.RollupModel;
 
 /** Options to alter the default representation of best offer prices */
-public class ExBestOfferOverRides {
-	private int bestPricesDepth;
+public class ExBestOffersOverrides {
+	private Integer bestPricesDepth;
 	private RollupModel rollupModel;
-	private int rollupLimit;
-	private double rollupLiabilityThreshold;
-	private int rollupLiabilityFactor;
+	private Integer rollupLimit;
+	private Double rollupLiabilityThreshold;
+	private Integer rollupLiabilityFactor;
 
-	public int getBestPricesDepth() {
+	public Integer getBestPricesDepth() {
 		return bestPricesDepth;
 	}
 
 	/** The maximum number of prices to return on each side for each runner.
 	 * If unspecified defaults to 3. */
-	public void setBestPricesDepth(int bestPricesDepth) {
+	public void setBestPricesDepth(Integer bestPricesDepth) {
 		this.bestPricesDepth = bestPricesDepth;
 	}
 
@@ -30,7 +30,7 @@ public class ExBestOfferOverRides {
 		this.rollupModel = rollupModel;
 	}
 
-	public int getRollupLimit() {
+	public Integer getRollupLimit() {
 		return rollupLimit;
 	}
 
@@ -38,11 +38,11 @@ public class ExBestOfferOverRides {
 	 * The exact definition of the limit depends on the rollupModel.
 	 * If no limit is provided it will use minimum stake as default the value.
 	 * Ignored if no rollup model is specified. */
-	public void setRollupLimit(int rollupLimit) {
+	public void setRollupLimit(Integer rollupLimit) {
 		this.rollupLimit = rollupLimit;
 	}
 
-	public double getRollupLiabilityThreshold() {
+	public Double getRollupLiabilityThreshold() {
 		return rollupLiabilityThreshold;
 	}
 
@@ -52,11 +52,11 @@ public class ExBestOfferOverRides {
 	 * Not supported as yet.
 	 * @param rollupLiabilityThreshold
 	 */
-	public void setRollupLiabilityThreshold(double rollupLiabilityThreshold) {
+	public void setRollupLiabilityThreshold(Double rollupLiabilityThreshold) {
 		this.rollupLiabilityThreshold = rollupLiabilityThreshold;
 	}
 
-	public int getRollupLiabilityFactor() {
+	public Integer getRollupLiabilityFactor() {
 		return rollupLiabilityFactor;
 	}
 
@@ -65,7 +65,7 @@ public class ExBestOfferOverRides {
 	 * After the rollupLiabilityThreshold price subsequent volumes will be
 	 * rolled up to minimum value such that the liability >= the minimum liability.service level default (5).
 	 * Not supported as yet. */
-	public void setRollupLiabilityFactor(int rollupLiabilityFactor) {
+	public void setRollupLiabilityFactor(Integer rollupLiabilityFactor) {
 		this.rollupLiabilityFactor = rollupLiabilityFactor;
 	}
 }
