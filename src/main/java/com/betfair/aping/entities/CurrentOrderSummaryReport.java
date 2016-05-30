@@ -2,6 +2,7 @@ package com.betfair.aping.entities;
 
 import java.util.List;
 
+/** A container representing search results */
 public class CurrentOrderSummaryReport {
 	private List<CurrentOrderSummary> currentOrders;
 	private boolean moreAvailable;

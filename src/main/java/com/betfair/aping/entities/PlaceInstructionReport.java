@@ -5,6 +5,7 @@ import com.betfair.aping.enums.InstructionReportStatus;
 
 import java.util.Date;
 
+/** Response to a PlaceInstruction */
 public class PlaceInstructionReport {
 	private InstructionReportStatus status;
 	private InstructionReportErrorCode errorCode;
