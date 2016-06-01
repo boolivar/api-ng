@@ -19,6 +19,7 @@ public enum MarketProjection {
 	/** If not selected then the runners will not be returned with marketCatalogue */
 	RUNNER_DESCRIPTION,
 	
-	/** If not selected then the runner metadata will not be returned with marketCatalogue. If selected then RUNNER_DESCRIPTION will also be returned regardless of whether it is included as a market projection */
+	/** If not selected then the runner metadata will not be returned with marketCatalogue.
+	 * If selected then RUNNER_DESCRIPTION will also be returned regardless of whether it is included as a market projection */
 	RUNNER_METADATA;
 }

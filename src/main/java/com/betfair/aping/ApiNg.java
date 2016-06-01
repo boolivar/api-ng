@@ -102,7 +102,9 @@ public interface ApiNg {
 
 	/**
 	 * Returns a list of information about published (ACTIVE/SUSPENDED) markets that does not change (or changes very rarely).
-	 * You use listMarketCatalogue to retrieve the name of the market, the names of selections and other information about markets.  Market Data Request Limits apply to requests made to listMarketCatalogue.
+	 * You use listMarketCatalogue to retrieve the name of the market, the names of selections and other information about markets. 
+	 * <p><a href="http://docs.developer.betfair.com/docs/display/1smk3cen4v3lu3yomq5qye0ni/Market+Data+Request+Limits">Market Data Request Limits</a>
+	 * apply to requests made to listMarketCatalogue.
 	 * 
 	 * <p><strong>Please note:</strong>
 	 * listMarketCatalogue does not return markets that are CLOSED.
