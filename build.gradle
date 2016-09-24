@@ -1,9 +1,6 @@
 apply plugin: 'java'
 
 repositories {
-	flatDir {
-        dirs 'lib'
-    }
     jcenter()
 }
 
