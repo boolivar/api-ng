@@ -138,7 +138,7 @@ public interface ApiNg {
 	 * 
 	 * <p><strong>Best Practice:</strong>
 	 * Customers seeking to use listMarketBook to obtain price, volume, unmatched (EXECUTABLE) orders
-	 * and matched position in a single operation should provide an OrderProjection of “EXECUTABLE” in
+	 * and matched position in a single operation should provide an OrderProjection of EXECUTABLE in
 	 * their listMarketBook request and receive all unmatched (EXECUTABLE) orders and the aggregated
 	 * matched volume from all orders irrespective of whether they are partially or fully matched.
 	 * The level of matched volume aggregation (MatchProjection) requested should be
@@ -185,7 +185,7 @@ public interface ApiNg {
 	 * 
 	 * <p><strong>Best Practice:</strong>
 	 * To efficiently track new bet matches from a specific time, customers should use
-	 * a combination of the dateRange, orderBy "BY_MATCH_TIME" and orderProjection “ALL”
+	 * a combination of the dateRange, orderBy "BY_MATCH_TIME" and orderProjection "ALL"
 	 * to filter fully/partially matched orders from the list of returned bets.
 	 * The response will then filter out any bet records that have no matched date and
 	 * provide a list of betIds in the order which they are fully/partially matched from

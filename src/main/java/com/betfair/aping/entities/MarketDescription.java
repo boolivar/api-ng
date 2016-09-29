@@ -109,7 +109,7 @@ public class MarketDescription {
 	}
 
 	/** Indicates whether or not the user's discount rate is taken into account on this market.
-	 * If ‘false’ all users will be charged the same commission rate, regardless of discount rate. */
+	 * If 'false' all users will be charged the same commission rate, regardless of discount rate. */
 	public Boolean getDiscountAllowed() {
 		return discountAllowed;
 	}
