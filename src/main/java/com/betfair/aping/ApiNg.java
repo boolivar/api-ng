@@ -218,7 +218,7 @@ public interface ApiNg {
 	 *        Note that there is a page size limit of 1000.
 	 *        A value of zero indicates that you would like all records (including and from 'fromRecord') up to the limit.
 	 */
-	CurrentOrderSummaryReport listCurrentOrders(Set<String> betIds, Set<String> marketIds, OrderProjection orderProjection, TimeRange placedDateRange, OrderBy orderBy, SortDir sortDir, int fromRecord, int recordCount);
+	CurrentOrderSummaryReport listCurrentOrders(Set<String> betIds, Set<String> marketIds, OrderProjection orderProjection, TimeRange placedDateRange, OrderBy orderBy, SortDir sortDir, Integer fromRecord, Integer recordCount);
 
 	/**
 	 * Returns a list of settled bets based on the bet status, ordered by settled date.
